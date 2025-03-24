@@ -1,0 +1,15 @@
+.header {
+  background-color: transparent;
+  position: fixed;
+  top: 32px;
+  left: 0;
+}
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+.header > .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
