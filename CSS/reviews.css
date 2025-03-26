@@ -1,7 +1,7 @@
 .title-customers {
     text-transform: uppercase;
     color: #141414;
-    letter-spacing: -1.5%;
+    letter-spacing: 0.015em;
     margin-bottom: 24px;
     line-height: 64px;
     font-size: 64px;
@@ -13,10 +13,14 @@
 }
 
 .reviews {
-    background-color: #F4F4FD;
+
     padding: 100px 0;
+}
 
-
+.reviews>.container {
+    display: flex;
+    flex-direction: column;
+    gap: 52px;
 }
 
 .review-header {
@@ -35,14 +39,20 @@
 }
 
 .customers-name {
+    font-weight: 600;
     color: #141414;
+    font-size: 18px;
+    line-height: 20px;
+    letter-spacing: 0.015em;
+    text-transform: uppercase;
+    margin-bottom: 8px;
 }
 
 .customers-ul {
     display: flex;
-    flex-direction: column;
-    margin-top: 72px;
     gap: 24px;
+
+
 
 }
 
@@ -61,4 +71,100 @@
     display: flex;
     gap: 8px;
 
+}
+
+.customer-text {
+    color: #858585;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+
+}
+
+
+
+/*mobıle*/
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+    .reviews {
+        padding: 100px 32px;
+    }
+
+    .container {
+        max-width: 768px;
+    }
+
+    .customers-ul {
+        flex-wrap: wrap;
+    }
+
+    .customers-list {
+        width: calc((100% - 24px)/2);
+        gap: 24px;
+    }
+
+    .customers-list:nth-child(n+3) {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 375px) and (max-width: 767px) {
+
+    .reviews {
+        padding: 80px 20px;
+    }
+
+    .reviews>.container {
+        max-width: 375px;
+        gap: 40px;
+    }
+
+    .review-header {
+        width: 335px;
+    }
+
+    .title-customers {
+        font-size: 48px;
+        line-height: 52px;
+        margin-bottom: 20px;
+    }
+
+    .review-text {
+        font-size: 14px;
+    }
+
+    .customers-list {
+        width: 100%;
+        gap: 24px;
+        pad: 16px;
+    }
+
+    .customers-list:nth-child(n+2) {
+        display: none;
+    }
+}
+
+@media (max-width: 374px) {
+    .reviews {
+        padding: 10px;
+    }
+
+    .reviews>.container {
+        max-width: 100%;
+    }
+
+    .review-header {
+        width: 100%;
+    }
+
+    .title-customers {
+        font-size: 48px;
+    }
+
+    .customers-ul {
+        flex-direction: column;
+    }
+
+    .review-list-item {
+        width: 100%;
+    }
 }
