@@ -25,6 +25,19 @@
 
     <load src="./HTML-PARTS/footer.html"></load>
 
-    <script type="module" src="./main.js"></script>
+    <script>
+      // <load> etiketini tanımlayan JavaScript kodu
+      document.querySelectorAll('load').forEach(async (element) => {
+          const src = element.getAttribute('src');
+          try {
+              const response = await fetch(src);
+              if (!response.ok) throw new Error('Dosya yüklenemedi.');
+              const content = await response.text();
+              element.outerHTML = content;
+          } catch (error) {
+              console.error('Hata:', error);
+          }
+      });
+  </script>
   </body>
 </html>
