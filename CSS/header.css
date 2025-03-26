@@ -1,65 +1,57 @@
-
-
 .header {
-  position: absolute;
+  position: relative; 
   width: 100%;
+  background-color: black ; 
+  padding: 20px 0; 
 }
 
-.div_header {
+.container {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-top: 20px;
-}
-.div_two_header {
-  gap: 20px;
-  width: 498px;
-  height: 52px;
-  justify-content: flex-end;
-}
-.nav_header {
-  display: flex;  
-  align-items: center;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 20px;
 }
 
-.span_header {
-  width: 186.67px;
-  height: 16.67px;
-  top: 2.22px;
-  left: 28.89px;
+.header a {
+  color: #fbfbfb;
+  font-weight: 700;
+  text-decoration: none; 
 }
 
-.ul_header {
+.button-group  {
   display: flex;
-  align-items: center;
-  gap: 8px;
-  margin-right: 20px;
-  
+  gap: 10px;
 }
-.list_header {
+
+.white-buttons  {
+  color: #fbfbfb;
+  font-size: 16px; 
   font-weight: 500;
-  font-size: 16px;
-  line-height: 1.25;
-  text-align: center;
-  color: #fbfbfb;
-  border: 1px solid #fbfbfb;
-  border-radius: 12px;
-  padding: 12px;
-  transition: 350ms ease-in-out;
+  padding: 5px 15px; 
+  border: 1px solid #fbfbfb; 
+  border-radius: 10px;
+  transition: background-color 0.3s ease; 
 }
-.button_header {
-  width: 158px;
-  color: #fbfbfb;
-  line-height: 1.11;
-  letter-spacing: -0.01em;
-  font-size: 18px;
-  font-weight: 600;
-  text-transform: uppercase;
-  padding: 16px 32px;
-  background-color: #7a3145;
-  border-radius: 30px;
-  cursor: pointer;
-  transition: background-color 350ms ease-in-out;
+
+
+.button-group a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+.red-button {
+ color: #fbfbfb;
+ background-color: #7a3145;
+ font-size: 20px; 
+ font-weight: 500; 
+ padding: 5px 15px;
+ border-radius: 50px ;
+ transition: background-color 0.3s ease;
+ margin-left: 50px;
+}
+
+.logo {
 
 
 }
