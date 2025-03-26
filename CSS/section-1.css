@@ -1,4 +1,4 @@
-visually-hidden {
+  .visually-hidden {
     display: none;
   }
   .hero-section {
@@ -10,7 +10,7 @@ visually-hidden {
     align-items: center;
     flex-wrap: wrap;
   }
-  /* birinci kutu */
+  /* birinci kutu */ 
   .hero-text {
     width: 50%;
     background-color: #576f35;
