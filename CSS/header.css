@@ -1,49 +1,123 @@
 .header {
-  position: relative; 
+  position: absolute; 
   width: 100%;
-  background-color: black ; 
-  padding: 20px 0; 
+  background-color: transparent ; 
+  padding: 32px 0; 
 }
-
-
-.header a {
-  color: #fbfbfb;
-  font-weight: 700;
-  text-decoration: none; 
+.header-container{
+  width: 100%;
+  padding: 0 100px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .button-group  {
   display: flex;
-  gap: 10px;
+  gap: 8px;
+  align-items: center;
+}
+.button-group a{
+  text-decoration: none;
 }
 
 .white-buttons  {
   color: #fbfbfb;
   font-size: 16px; 
   font-weight: 500;
-  padding: 5px 15px; 
+  padding: 12px; 
   border: 1px solid #fbfbfb; 
   border-radius: 10px;
   transition: background-color 0.3s ease; 
+  line-height: 20px;
 }
-
-
 .button-group a:hover {
   background-color: rgba(255, 255, 255, 0.2);
 }
-
 .red-button {
  color: #fbfbfb;
  background-color: #7a3145;
  font-size: 20px; 
  font-weight: 500; 
- padding: 5px 15px;
+ padding: 16px 32px;
  border-radius: 50px ;
  transition: background-color 0.3s ease;
  margin-left: 50px;
 }
+.mobile-btn , .mobile-btn-close{
+  display: none;
+}
 
-.logo {
 
+@media screen and (min-width: 768px) and (max-width: 1279px){
+  .button-group{
+    position: fixed;
+    width: 351px;
+    height: 100%;
+    top: 0;
+    right: 0;
+    background: #576F35;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 32px 32px 48px;
+    transition: opacity 0.3s ease-in-out, visibility 0.3s ease-in-out;
 
+  }
+  .white-group{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+  .mobile-btn{
+    display: block;
+  }
+  .mobile-btn-close{
+    display: block;
+    align-self: flex-end;
+  }
+  .close-svg{
+    fill: #FBFBFB;
+    width: 20px;
+    height: 20px;
+  }
+  .red-button{
+    margin-left: 0;
+  }
+}
+@media screen and (min-width: 375px) and (max-width: 767px){
+  .button-group{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    background: #576F35;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 32px 32px 48px;
+  }
+  .white-group{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+  .mobile-btn-close{
+    display: block;
+    align-self: flex-end;
+  }
+  .close-svg{
+    fill: #FBFBFB;
+    width: 20px;
+    height: 20px;
+  }
+  .red-button{
+    margin-left: 0;
+  }
+  .mobile-btn-close:focus + .button-group{
+    display: none;
+  }
+}
+@media (max-width: 374px) {
+  
 }

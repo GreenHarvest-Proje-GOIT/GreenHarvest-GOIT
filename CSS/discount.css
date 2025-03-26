@@ -1,0 +1,56 @@
+.discount{
+    max-width: 100%;
+    padding: 100px;
+}
+.discount-title{
+    color:#141414;
+    font-size:72px;
+    font-weight: 600;
+    line-height: 76px;
+    letter-spacing: 0.015em;
+    text-transform: uppercase;
+    width: 1054px;
+}
+.discount-title span{
+    color: #FBFBFB;
+    background-color: #576F35;
+    border-radius: 12px;
+    padding-left: 16px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1279px){
+    .discount{
+        padding: 100px 32px;
+    }
+    .discount-title{
+        font-size:64px;
+        line-height: 64px;
+        width: 704px;
+    }
+}
+@media screen and (min-width: 375px) and (max-width: 767px){
+    .discount{
+        padding: 80px 20px;
+    }
+    .discount-title{
+        font-size:48px;
+        line-height: 52px;
+    }
+    .discount-title span{
+        display: block;
+        width: 100%;
+    }
+}
+@media (max-width: 374px) {
+    .discount{
+        padding: 10px;
+    }
+    .discount-title{
+        font-size:32px;
+        line-height: 32px;
+    }
+    .discount-title span{
+        display: block;
+        width: 100%;
+    }
+}
