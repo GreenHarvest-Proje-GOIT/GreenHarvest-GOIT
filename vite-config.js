@@ -37,9 +37,17 @@ export default defineConfig(({ command }) => {
       outDir: '../dist',
       emptyOutDir: true,
     },
+    server: {
+      watch: {
+        usePolling: true,
+      },
+      proxy: {
+        "/HTML-PARTS/": "http://localhost:5173/",
+      },
+    },
     plugins: [
       injectHTML(),
-      FullReload(['./src/**/**.html']),
+      FullReload(['./src/HTML-PARTS/**/*.html'], { always: true }), // HTML dosyalarındaki değişiklikleri algılar
       SortCss({
         sort: 'mobile-first',
       }),
