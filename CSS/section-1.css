@@ -1,250 +1,256 @@
-  .visually-hidden {
-    display: none;
-  }
-  .hero-section {
-    width: 100%;
-    overflow: hidden;
-  }
-  .container {
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-  }
-  /* birinci kutu */ 
+.visually-hidden {
+  display: none;
+}
+.hero-section {
+  width: 100%;
+  overflow: hidden;
+  background: conic-gradient(
+    from 0deg,
+    #576f35 0% 25%,
+    #576f35 25% 50%,
+    #7a3145 50% 75%,
+    #576f35 75% 100%
+  );
+}
+.container {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+/* birinci kutu */
+.hero-text {
+  width: 50%;
+  background-color: #576f35;
+  height: 764px;
+  padding: 100px;
+}
+.hero-div {
+  width: 504px;
+}
+
+.hero-text h1 {
+  font-size: 76px;
+  color: white;
+  font-weight: 600;
+  letter-spacing: -0.015em;
+  line-height: 76px;
+  text-transform: uppercase;
+  padding-bottom: 52px;
+}
+
+.hero-text p {
+  font-size: 16px;
+  color: white;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0%;
+  margin-right: 32px;
+}
+/* ikinci kutu */
+.vegetable-image {
+  width: 50%;
+  background-image: url("../images/vegetables.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-color: #f0f0f0;
+  height: 764px;
+}
+/* üçüncü kutu */
+.cooking-image {
+  width: 50%;
+  background-color: #7a3145;
+  height: 764px;
+  padding: 100px;
+}
+.cooking-img {
+  border-radius: 30px;
+  width: 100%;
+  height: 560px;
+  object-fit: cover;
+  align-self: center;
+}
+/* dördüncü kutu */
+.info {
+  width: 50%;
+  height: 764px;
+  padding: 100px;
+  background-color: #576f35;
+}
+
+.info-p {
+  margin-bottom: 104px;
+  color: white;
+  width: 440px;
+}
+.info ol {
+  counter-reset: my-counter;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.info li {
+  counter-increment: my-counter;
+  background-color: white;
+  border-radius: 15px;
+  padding: 12px 25px 12px 24px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 24px;
+}
+.info li::before {
+  content: counter(my-counter);
+  font-weight: bold;
+  color: white;
+  background: #7a3145;
+  border-radius: 50%;
+  padding: 20px;
+  border: 5px solid #d4bfc4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 11px 18px;
+}
+
+.info-text {
+  color: white;
+  width: 440px;
+}
+.info h3 {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 32px;
+  letter-spacing: -0.015em;
+  text-transform: uppercase;
+  padding-bottom: 24px;
+  margin-top: 24px;
+}
+.info p {
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 20px;
+  letter-spacing: 0%;
+}
+.highlight {
+  color: #d4bfc4;
+}
+.steps {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0%;
+  color: #858585;
+}
+.steps span {
+  color: black;
+  font-weight: 700;
+}
+
+/* mobile */
+@media screen and (min-width: 375px) and (max-width: 767px) {
   .hero-text {
-    width: 50%;
-    background-color: #576f35;
-    height: 764px;
-    padding: 100px;
+    width: 100%;
+    padding: 100px 20px 40px 20px;
+    height: auto;
   }
   .hero-div {
-    width: 504px;
+    width: 375px;
   }
-  
-  .hero-text h1 {
-    font-size: 76px;
-    color: white;
-    font-weight: 600;
-    letter-spacing: -0.015em;
-    line-height: 76px;
-    text-transform: uppercase;
-    padding-bottom: 52px;
+  .hero-div h1 {
+    font-size: 52px;
+    line-height: 52px;
+    padding-bottom: 20px;
   }
-  
-  .hero-text p {
-    font-size: 16px;
-    color: white;
-    font-weight: 500;
+  .hero-div p {
+    font-size: 14px;
     line-height: 20px;
-    letter-spacing: 0%;
-    margin-right: 32px;
+    width: 335px;
   }
-  /* ikinci kutu */
   .vegetable-image {
-    width: 50%;
-    background-image: url("../images/vegetables.jpg");
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-color: #f0f0f0;
-    height: 764px;
+    width: 100%;
+    height: 372px;
   }
-  /* üçüncü kutu */
   .cooking-image {
-    width: 50%;
-    background-color: #7a3145;
-    height: 764px;
-    padding: 100px;
+    width: 100%;
+    padding: 40px 20px 40px 20px;
+    height: auto;
   }
   .cooking-img {
-    border-radius: 30px;
+    height: 640px;
+  }
+  .info {
     width: 100%;
-    height: 560px;
+    padding: 80px 20px;
+  }
+  .info-div h3 {
+    font-size: 28px;
+    line-height: 28px;
+    width: 335px;
+  }
+  .info-div p {
+    font-size: 14px;
+    line-height: 20px;
+    width: 335px;
+  }
+  .info-p {
+    margin-bottom: 40px;
+  }
+}
+
+/* tablet */
+@media screen and (min-width: 768px) and (max-width: 1279px) {
+  .hero-text {
+    width: 100%;
+    padding: 120px 32px 52px 32px;
+    height: auto;
+  }
+  .hero-div {
+    width: 704px;
+  }
+  .hero-div h1 {
+    font-size: 76px;
+    line-height: 76px;
+  }
+  .hero-div p {
+    width: 603px;
+  }
+  .vegetable-image {
+    width: 100%;
+    height: 536px;
+  }
+  .cooking-image {
+    width: 100%;
+    padding: 100px 64px;
+  }
+  .cooking-img {
+    width: 100%;
     object-fit: cover;
     align-self: center;
   }
-  /* dördüncü kutu */
   .info {
-    width: 50%;
-    height: 764px;
-    padding: 100px;
-    background-color: #576f35;
+    width: 100%;
+    padding: 100px 164px;
   }
-  
-  .info-p {
-    margin-bottom: 104px;
-    color: white;
-    width: 440px;
+  .info-div {
+    width: 100%;
+    margin: 0 auto;
   }
-  .info ol {
-    counter-reset: my-counter;
-    list-style: none;
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
+}
+
+/* en küçük sürüm */
+@media (max-width: 374px) {
+  .hero-text {
+    width: 100%;
   }
-  .info li {
-    counter-increment: my-counter;
-    background-color: white;
-    border-radius: 15px;
-    padding: 12px 25px 12px 24px;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 24px;
+  .vegetable-image {
+    width: 100%;
   }
-  .info li::before {
-    content: counter(my-counter);
-    font-weight: bold;
-    color: white;
-    background: #7a3145;
-    border-radius: 50%;
-    padding: 20px;
-    border: 5px solid #d4bfc4;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 11px 18px;
+  .cooking-image {
+    width: 100%;
   }
-  
-  .info-text {
-    color: white;
-    width: 440px;
+  .info {
+    width: 100%;
   }
-  .info h3 {
-    font-weight: 600;
-    font-size: 32px;
-    line-height: 32px;
-    letter-spacing: -0.015em;
-    text-transform: uppercase;
-    padding-bottom: 24px;
-    margin-top: 24px;
-  }
-  .info p {
-    font-size: 16px;
-    font-weight: 500;
-    line-height: 20px;
-    letter-spacing: 0%;
-  }
-  .highlight {
-    color: #d4bfc4;
-  }
-  .steps {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
-    letter-spacing: 0%;
-    color: #858585;
-  }
-  .steps span {
-    color: black;
-    font-weight: 700;
-  }
-  
-  /* mobile */
-  @media screen and (min-width: 375px) and (max-width: 767px) {
-    .hero-text {
-      width: 100%;
-      padding: 100px 20px 40px 20px;
-      height: auto;
-    }
-    .hero-div {
-      width: 375px;
-    }
-    .hero-div h1 {
-      font-size: 52px;
-      line-height: 52px;
-      padding-bottom: 20px;
-    }
-    .hero-div p {
-      font-size: 14px;
-      line-height: 20px;
-      width: 335px;
-    }
-    .vegetable-image {
-      width: 100%;
-      height: 372px;
-    }
-    .cooking-image {
-      width: 100%;
-      padding: 40px 20px 40px 20px;
-      height: auto;
-    }
-    .cooking-img {
-      height: 640px;
-    }
-    .info {
-      width: 100%;
-      padding: 80px 20px;
-    }
-    .info-div h3 {
-      font-size: 28px;
-      line-height: 28px;
-      width: 335px;
-    }
-    .info-div p {
-      font-size: 14px;
-      line-height: 20px;
-      width: 335px;
-    }
-    .info-p {
-      margin-bottom: 40px;
-    }
-  }
-  
-  /* tablet */
-  @media screen and (min-width: 768px) and (max-width: 1279px) {
-    .hero-text {
-      width: 100%;
-      padding: 120px 32px 52px 32px;
-      height: auto;
-    }
-    .hero-div {
-      width: 704px;
-    }
-    .hero-div h1 {
-      font-size: 76px;
-      line-height: 76px;
-    }
-    .hero-div p {
-      width: 603px;
-    }
-    .vegetable-image {
-      width: 100%;
-      height: 536px;
-    }
-    .cooking-image {
-      width: 100%;
-      padding: 100px 64px;
-    }
-    .cooking-img {
-      width: 100%;
-      object-fit: cover;
-      align-self: center;
-    }
-    .info {
-      width: 100%;
-      padding: 100px 164px;
-    }
-    .info-div {
-      width: 100%;
-      margin: 0 auto;
-    }
-  }
-  
-  /* en küçük sürüm */
-  @media (max-width: 374px) {
-    .hero-text {
-      width: 100%;
-    }
-    .vegetable-image {
-      width: 100%;
-    }
-    .cooking-image {
-      width: 100%;
-    }
-    .info {
-      width: 100%;
-    }
-  }
-  
+}
