@@ -22,7 +22,10 @@
   width: 50%;
   background-color: #576f35;
   height: 764px;
-  padding: 100px;
+  padding: 100px 100px 52px 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 .hero-div {
   width: 504px;
@@ -35,7 +38,7 @@
   letter-spacing: -0.015em;
   line-height: 76px;
   text-transform: uppercase;
-  padding-bottom: 52px;
+  margin-bottom: 128px;
 }
 
 .hero-text p {
@@ -150,18 +153,21 @@
 
 /* mobile */
 @media screen and (min-width: 375px) and (max-width: 767px) {
+  .hero-section {
+    background: #576f35;
+  }
   .hero-text {
     width: 100%;
     padding: 100px 20px 40px 20px;
     height: auto;
   }
   .hero-div {
-    width: 375px;
+    width: 100%;
   }
   .hero-div h1 {
     font-size: 52px;
     line-height: 52px;
-    padding-bottom: 20px;
+    margin-bottom: 20px;
   }
   .hero-div p {
     font-size: 14px;
@@ -201,10 +207,16 @@
 
 /* tablet */
 @media screen and (min-width: 768px) and (max-width: 1279px) {
+  .hero-section {
+    background: #576f35;
+  }
   .hero-text {
     width: 100%;
     padding: 120px 32px 52px 32px;
     height: auto;
+  }
+  .hero-text h1{
+    margin-bottom: 24px;
   }
   .hero-div {
     width: 704px;
