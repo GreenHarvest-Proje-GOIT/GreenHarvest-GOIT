@@ -51,34 +51,30 @@
 .customers-ul {
     display: flex;
     gap: 24px;
-
-
-
 }
+
+
 
 .customers-list {
     background-color: #fbfbfb;
-    text-align: center;
-    width: calc((100%-48px)/3) font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
-    letter-spacing: 0% color: #858585;
-    align-items: center;
+    width: calc((100%-48px)/3) align-items: center;
     border: 1px solid #D4BFC4;
     border-radius: 24px;
     padding: 20px;
     flex-direction: column;
     display: flex;
     gap: 8px;
-
+    text-align: center;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 0% color: #858585;
 }
-
 .customer-text {
     color: #858585;
     font-weight: 500;
     font-size: 16px;
     line-height: 20px;
-
 }
 
 
