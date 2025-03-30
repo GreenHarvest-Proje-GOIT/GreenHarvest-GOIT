@@ -7,37 +7,28 @@
     font-size: 64px;
     font-weight: 600;
 }
-
 .title-2 {
     color: #576f35;
 }
-
 .reviews {
-
-    padding: 100px 0;
+padding: 100px 0;
 }
-
 .reviews>.container {
     display: flex;
     flex-direction: column;
     gap: 52px;
 }
-
 .review-header {
     width: 553px;
 }
-
 .review-text {
-
     text-transform: capitalize;
     color: #141414;
     letter-spacing: 0%;
     line-height: 20px;
     font-size: 16px;
     font-weight: 500;
-
 }
-
 .customers-name {
     font-weight: 600;
     color: #141414;
@@ -47,37 +38,30 @@
     text-transform: uppercase;
     margin-bottom: 8px;
 }
-
 .customers-ul {
     display: flex;
     gap: 24px;
 }
-
-
-
-.customers-list {
-    background-color: #fbfbfb;
-    width: calc((100%-48px)/3) align-items: center;
-    border: 1px solid #D4BFC4;
-    border-radius: 24px;
-    padding: 20px;
-    flex-direction: column;
-    display: flex;
-    gap: 8px;
-    text-align: center;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 20px;
-    letter-spacing: 0% color: #858585;
-}
+.customers-list{
+        background-color: #fbfbfb;
+        border: 1px solid #D4BFC4;
+        border-radius: 24px;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        align-items: center;
+        text-align: center;
+        width: calc((100% - 48px)/3);
+        
+    
+    }
 .customer-text {
     color: #858585;
     font-weight: 500;
     font-size: 16px;
     line-height: 20px;
 }
-
-
 
 /*mobıle*/
 @media screen and (min-width: 768px) and (max-width: 1279px) {
