@@ -28,7 +28,6 @@
 }
 
 .review-text {
-    text-transform: capitalize;
     color: #141414;
     letter-spacing: 0%;
     line-height: 20px;
@@ -125,7 +124,9 @@
         line-height: 52px;
         margin-bottom: 20px;
     }
-
+    .customer-text{
+        font-size: 14px;
+    }
     .review-text {
         font-size: 14px;
     }

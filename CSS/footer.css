@@ -141,6 +141,10 @@ footer {
   .left-box p{
     font-size: 14px;
   }
+  .left-box img{
+    width: 168px;
+    height: 16px;
+  }
   .links{
     width: 100%;
   }
@@ -159,6 +163,22 @@ footer {
   }
 }
 @media (max-width: 374px) {
-  
+  footer{
+    padding: 10px;
+  }
+  .container-top{
+    flex-direction: column;
+    gap: 20px;
+  }
+  .container-bottom{
+    flex-direction: column;
+    gap: 20px;
+  }
+  .right-box {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    gap: 20px;
+  }
 }
   

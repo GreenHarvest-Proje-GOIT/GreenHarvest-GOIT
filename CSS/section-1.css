@@ -114,7 +114,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 11px 18px;
+  width: 40px;
+  height: 40px;
 }
 
 .info-text {
@@ -249,12 +250,19 @@
     width: 100%;
     margin: 0 auto;
   }
+  .info-p {
+    margin-bottom: 52px;
+  }
+  .info li{
+   padding: 12px 15px 12px  ;
+  }
 }
 
 /* en küçük sürüm */
 @media (max-width: 374px) {
   .hero-text {
     width: 100%;
+    padding:10px;
   }
   .vegetable-image {
     width: 100%;
@@ -264,5 +272,22 @@
   }
   .info {
     width: 100%;
+    height: auto;
+    padding: 10px;
+  }
+  .hero-div{
+    width: 100%;
+  }
+  .info-text{
+    width: 100%;
+  }
+  .info-p{
+    width: 100%;
+  }
+  .hero-text h1{
+    font-size:38px;
+  }
+  .cooking-image{
+    padding: 10px;
   }
 }

@@ -32,8 +32,13 @@
   transition: background-color 0.3s ease; 
   line-height: 20px;
 }
-.button-group a:hover {
-  background-color: rgba(255, 255, 255, 0.2);
+.white-buttons:hover{
+  color: #7A3145;
+  background-color: #D4BFC4;
+}
+.white-buttons:focus{
+  color: #7A3145;
+  background-color: #FBFBFB;
 }
 .red-button {
  color: #fbfbfb;
@@ -45,12 +50,29 @@
  transition: background-color 0.3s ease;
  margin-left: 50px;
 }
+.red-button:hover{
+  color: #7A3145;
+  background-color: #D4BFC4;
+}
+.red-button:focus{
+  color: #7A3145;
+  background-color: #FBFBFB;
+}
 .mobile-btn , .mobile-btn-close{
   display: none;
 }
 
 
 @media screen and (min-width: 768px) and (max-width: 1279px){
+  .white-buttons:hover{
+    background-color: #FBFBFB;
+    color: #7A3145;
+
+  }
+  .red-button:hover{
+    background-color: #FBFBFB;
+    color: #7A3145;
+  }
   .header{
     padding: 32px;
   }
@@ -88,16 +110,21 @@
     display: block;
     align-self: flex-end;
   }
-  .close-svg{
+  .close-svg , .mobile-btn-svg{
     fill: #FBFBFB;
-    width: 20px;
-    height: 20px;
+    width: 40px;
+    height: 40px;
   }
   .red-button{
     margin-left: 0;
   }
 }
 @media screen and (min-width: 375px) and (max-width: 767px){
+  .close-svg , .mobile-btn-svg{
+    fill: #FBFBFB;
+    width: 32px;
+    height: 32px;
+  }
   .header{
     padding:20px;
   }
@@ -121,6 +148,11 @@
     flex-direction: column;
     gap: 24px;
   }
+  .white-buttons:hover{
+    background-color: #FBFBFB;
+    color: #7A3145;
+
+  }
   .mobile-btn{
     display: block;
   }
@@ -139,7 +171,65 @@
   .mobile-btn-close:focus + .button-group{
     display: none;
   }
+  .logo img{
+    width: 168px;
+    height: 16px;
+  }
 }
 @media (max-width: 374px) {
-  
+  .close-svg , .mobile-btn-svg{
+    fill: #FBFBFB;
+    width: 32px;
+    height: 32px;
+  }
+  .header{
+    padding:20px;
+  }
+  .header-container{
+    padding: 0px;
+  }
+  .button-group{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 0;
+    background: #576F35;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 32px 32px 48px;
+    display: none;
+  }
+  .white-group{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+  }
+  .white-buttons:hover{
+    background-color: #FBFBFB;
+    color: #7A3145;
+
+  }
+  .mobile-btn{
+    display: block;
+  }
+  .mobile-btn-close{
+    display: block;
+    align-self: flex-end;
+  }
+  .close-svg{
+    fill: #FBFBFB;
+    width: 20px;
+    height: 20px;
+  }
+  .red-button{
+    margin-left: 0;
+  }
+  .mobile-btn-close:focus + .button-group{
+    display: none;
+  }
+  .logo img{
+    width: 168px;
+    height: 16px;
+  }
 }

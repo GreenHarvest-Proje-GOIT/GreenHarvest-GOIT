@@ -15,14 +15,17 @@
                     Ordering <span class="red-title">from us</span> us is quick and easy! Fill out <span class="green-title">the form</span>  below and we will contact you !
                 </h3>
                 <form action="" class="contact-form">
-                    <input type="text" class="form-input" placeholder="Full Name">
-                    <input type="text" class="form-input" placeholder="Email">
-                    <textarea class="form-textarea" id="" placeholder="Comment" ></textarea>
+                    <input type="text" class="form-input " placeholder="Full Name">
+                    <input type="email" class="form-input " placeholder="Email"  pattern="([A-z0-9_.-]{1,})@([A-z0-9_.-]{1,}).([A-z]{2,8})") required>
+                    <p class="text-valid">Başarılı!</p>
+                    <p class="text-invalid">Geçersiz E-posta Lütfen Tekrar Deneyin!</p>
+                    <textarea class="form-textarea " id="" placeholder="Comment" ></textarea>
                     <button class="btn-red">SEND</button>
                 </form>
             </div>
             <div class="social">
-                <img src="https://s3-alpha-sig.figma.com/img/599d/23bc/c1f2fab17430ad65f16c7005de4fcdb1?Expires=1743379200&Key-Pair-Id=APKAQ4GOSFWCW27IBOMQ&Signature=V1P5AtPhBFz1XicVmVOlDzRwq0eR0QHR48b7bZ8Wqg9StXcOLtugJZ2e~bgS3jLLquYy-cbJ2Xw4VBI-CxLi5y6obILHS32cqvwp6cLRUlVdkpIiXK7oUcZPr8WDEPQ8Ohcp4~kp-3BQNDEdc38I2oYhcykfS8fGQ5AnazWReIrhkS~Z64yKSfGQohh7tk-s-TyG4zaFpW9Hr25Wehf0LPWIjO4jgN9T9scFqcBS6TVvcqSCf2lrX4gbI2GrvCmuI61Io7EpBmB4zGs8YulNIi~oRDhxCWwpsSVfkVpG60HwdlnPv4x8lNvqc6pOHFxZN-6zyxbJp9NFz92E0JjzMg__" alt="">
+                <img class="cooking-img" src="./images/order.jpeg" srcset="./images/order.jpeg,
+                ./images/order-2x.jpg" alt="Woman">
                 <div>
                     <p class="social-content">Follow Follow us on our social networks:</p>
                     <ul class="social-list">

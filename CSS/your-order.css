@@ -48,7 +48,7 @@
 	font-weight: 600;
 	font-size:32px;
 	line-height: 32px;
-	letter-spacing: -0.05em;
+	letter-spacing: -0.015rem;
 	text-transform: uppercase;
 	margin-bottom: 52px;
 }
@@ -156,6 +156,51 @@
 .social-list li:last-child::after{
 	content: "";
 }
+
+.form-input::placeholder {
+	color: black;
+  }
+  
+  .form-input:hover{
+	border-color: #7A3145;
+  }
+  .form-input:focus {
+	border-color: #7A3145;
+  }
+  
+  
+  .form-input:not(:placeholder-shown):invalid {
+	border-color: #E74A3B;
+  }
+  
+  
+  .form-input:not(:placeholder-shown):valid {
+	border-color: #3CBC81;
+  }
+  
+  .text-valid,
+  .text-invalid {
+	font-size: 14px;
+	padding-left: 20px;
+	margin-top: 4px;
+	display: none;
+  }
+  
+  .text-valid {
+	color: #3CBC81;
+  }
+  
+  .text-invalid {
+	color: #E74A3B;
+  }
+  
+  .form-input:not(:placeholder-shown):valid ~ .text-valid {
+	display: block;
+  }
+  
+  .form-input:not(:placeholder-shown):invalid ~ .text-invalid {
+	display: block;
+  }
 @media screen and (min-width: 768px) and (max-width: 1279px){
     .container{
 		max-width: 768px;
@@ -172,6 +217,7 @@
 	}
 	.contact{
 		width: 100%;
+		padding: 72px 100px;
 	}
 	.social{
 		width: 100%;
@@ -212,13 +258,14 @@
 	}
 	.social{
 		padding: 40px 20px;
-		width: 100%;
-		
+		width: 100%;	
 	}
 	.social img{
-		
 		height: 272px;
 		margin-bottom: 20px;
+	}
+	.social-content{
+		font-size: 14px;
 	}
 	.social-list{
 		flex-wrap: wrap;
